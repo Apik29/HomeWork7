@@ -35,7 +35,7 @@ void Average(int[,] arr)
         double sum = 0;
         for (int j = 0; j < arr.GetLength(0); j++)
         {
-            sum += arr[j, i];
+            sum = sum + arr[j, i];
         }
         double average = sum / arr.GetLength(0);
         Console.Write($"{average}; ");
